@@ -106,7 +106,7 @@ https://user-images.githubusercontent.com/49542850/210127142-1d9c5821-0879-481f-
 1. Siapkan ESP32 dan hubungkan ke Arduino IDE. Siapkan sensor DHT (atau lainnya).
 2. Buat rangkaian berikut.
 
-<img src="https://user-images.githubusercontent.com/49542850/210132150-be787f19-c2ab-4ad3-b603-4e68a1f68681.png" width="600px">
+<img src="https://user-images.githubusercontent.com/49542850/210141122-223f46bc-4ba4-4db5-b2c2-070a3fbec5b5.png" width="600px">
 
 3. Download kode dari source code sesuai project.
 4. Kunjungi website [Adafruit](https://io.adafruit.com/) kemudian register atau login.
@@ -116,13 +116,15 @@ https://user-images.githubusercontent.com/49542850/210127142-1d9c5821-0879-481f-
     - **Feeds** adalah suatu grup sebagai identitas suatu atau kumpulan perangkat.
     - Feeds dapat berisi lebih dari satu perangkat. Jika kita mengubah nilai dari suatu feeds, maka seluruh perangkat yang ada pada feeds akan terpengaruh.
 
-<img src="https://user-images.githubusercontent.com/49542850/210132151-c1c28a93-bd85-4529-9fd7-f7369370d8f0.png" width="600px">
+<img src="https://user-images.githubusercontent.com/49542850/210132150-be787f19-c2ab-4ad3-b603-4e68a1f68681.png" width="600px">
 
 6. Tekan **Dashboard** dan pilih **New Dashboard**.
 
-<img src="https://user-images.githubusercontent.com/49542850/210132154-c00fcc31-d4bb-471f-b386-024671ae85b9.png" width="600px">
+<img src="https://user-images.githubusercontent.com/49542850/210132151-c1c28a93-bd85-4529-9fd7-f7369370d8f0.png" width="600px">
 
 7. Klik gerigi opsi dan pilih **Create new block**.
+
+<img src="https://user-images.githubusercontent.com/49542850/210132154-c00fcc31-d4bb-471f-b386-024671ae85b9.png" width="600px">
 
 <img src="https://user-images.githubusercontent.com/49542850/210132155-5c354b24-e9c4-4249-ba57-538a17a67f99.png" width="600px">
 
