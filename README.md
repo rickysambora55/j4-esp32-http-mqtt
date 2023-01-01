@@ -46,11 +46,41 @@ Atau download `libraries` dan upload pada direktori projek.
 Nb. Proses instalasi dapat dilewati jika libraries telah diinstal.
 Atau download `libraries` dan upload pada direktori projek.
 
+### Instalasi Cayenne Libraries
+
+1. Buka Arduino IDE
+2. Buka **Sketch** > **Include Library** > **Manage Libraries**.
+3. Cari library **CayenneMQTT** by myDevices kemudian install.
+4. Atau dapat melalui link [CayenneMQTT](https://github.com/adafruit/Adafruit_Sensor) dan upload pada libraries di direktori projek. Rename direktori menjadi **CayenneMQTT**.
+
+Nb. Proses instalasi dapat dilewati jika libraries telah diinstal.
+Atau download `libraries` dan upload pada direktori projek.
+
+### Instalasi Adafruit MQTT Libraries
+
+1. Buka Arduino IDE
+2. Buka **Sketch** > **Include Library** > **Manage Libraries**.
+3. Cari library **Adafruit MQTT** by Adafruit kemudian install.
+4. Atau dapat melalui link [Adafruit MQTT](https://github.com/adafruit/Adafruit_MQTT_Library) dan upload pada libraries di direktori projek. Rename direktori menjadi **Adafruit_MQTT_Library**.
+
+Nb. Proses instalasi dapat dilewati jika libraries telah diinstal.
+Atau download `libraries` dan upload pada direktori projek.
+
+### Instalasi ThingSpeak Libraries
+
+1. Buka Arduino IDE
+2. Buka **Sketch** > **Include Library** > **Manage Libraries**.
+3. Cari library **ThingSpeak** by MathWorks kemudian install.
+4. Atau dapat melalui link [ThingSpeak](https://github.com/mathworks/thingspeak-arduino) dan upload pada libraries di direktori projek. Rename direktori menjadi **ThingSpeak**.
+
+Nb. Proses instalasi dapat dilewati jika libraries telah diinstal.
+Atau download `libraries` dan upload pada direktori projek.
+
 ## Project A - Komunikasi ESP-Sensor-LED dengan Cayenne
 
 ### Rangkaian & Instalasi
 
-1. Siapkan ESP32 dan hubungkan ke Arduino IDE. Siapkan sensor water level (atau dht).
+1. Siapkan ESP32 dan hubungkan ke Arduino IDE. Siapkan sensor water level (atau dht). Pastikan library Cayenne sudah terinstal.
 2. Buat rangkaian berikut.
 
 <img src="https://user-images.githubusercontent.com/49542850/210127141-16c8ccac-03bc-4d1c-b08f-6b6acf302fbf.png" width="600px">
@@ -61,29 +91,24 @@ Atau download `libraries` dan upload pada direktori projek.
 
 <img src="https://user-images.githubusercontent.com/49542850/210127143-f94a8192-7e57-48d2-85f1-ac51fb300468.png" width="600px">
 
-6. Install library:
-    - Buka Arduino IDE
-    - Buka **Sketch** > **Include Library** > **Manage Libraries**.
-    - Cari library **CayenneMQTT** by myDevices kemudian install.
-    - Atau dapat melalui link [CayenneMQTT](https://github.com/adafruit/Adafruit_Sensor) dan upload pada libraries di direktori projek. Rename direktori menjadi **CayenneMQTT**.
-7. Pilih perangkat yang sudah ditambahkan, kemudian rename board untuk mempermudah. Copy kredensial yang diberikan dan isikan dalam kode pada bagian yang sudah disediakan. Kemudian upload kode.
+6. Pilih perangkat yang sudah ditambahkan, kemudian rename board untuk mempermudah. Copy kredensial yang diberikan dan isikan dalam kode pada bagian yang sudah disediakan. Kemudian upload kode. Pastikan ssid dan password diisi dengan hotspot/AP yang terhubung dengan internet.
 
 <img src="https://user-images.githubusercontent.com/49542850/210127144-d112f437-7a3e-4969-af98-be98eb8568cf.png" width="600px">
 
-8. Setelah ESP terdeteksi, kemudian tekan **Add New** > **Device/Widget** dan pilih custom widget tank.
+7. Setelah ESP terdeteksi, kemudian tekan **Add New** > **Device/Widget** dan pilih custom widget tank.
 
 <img src="https://user-images.githubusercontent.com/49542850/210127145-976c8dda-257f-4d08-b3e8-d7bcd965f6e5.png" width="600px">
 
-9. Masukkan Nama, Data: Tank level, Unit: Analog/Menyesuaikan, Channel: 1 (pada contoh), Min: 0, Max: 100, dan Display. Kemudian simpan.
+8. Masukkan Nama, Data: Tank level, Unit: Analog/Menyesuaikan, Channel: 1 (pada contoh), Min: 0, Max: 100, dan Display. Kemudian simpan.
 
 <img src="https://user-images.githubusercontent.com/49542850/210127136-a67a45d4-7c5a-4846-b810-5e2fe61bcdd6.png" width="600px">
 
-10. Lakukan hal yang sama untuk LED. Pilih widget tipe button, isikan Nama, Data: Digital Acuator, Unit: Digital, Channel: 0 (pada contoh), dan icon. Kemudian simpan.
+9. Lakukan hal yang sama untuk LED. Pilih widget tipe button, isikan Nama, Data: Digital Acuator, Unit: Digital, Channel: 0 (pada contoh), dan icon. Kemudian simpan.
 
 <img src="https://user-images.githubusercontent.com/49542850/210127139-b8c872b4-6f11-4bb1-80a1-afb11564d474.png" width="600px">
 
-11. Jalankan kode.
-12. LED dapat dikontrol dengan menekan icon widget LED.
+10. Jalankan kode.
+11. LED dapat dikontrol dengan menekan icon widget LED.
 
 <img src="https://user-images.githubusercontent.com/49542850/210127140-b82c9394-7435-4974-85ea-009bb44f0c0f.png" width="600px">
 
@@ -103,7 +128,7 @@ https://user-images.githubusercontent.com/49542850/210127142-1d9c5821-0879-481f-
 
 ### Rangkaian & Instalasi
 
-1. Siapkan ESP32 dan hubungkan ke Arduino IDE. Siapkan sensor DHT (atau lainnya).
+1. Siapkan ESP32 dan hubungkan ke Arduino IDE. Siapkan sensor DHT (atau lainnya). Pastikan library Adafruit sudah terinstal.
 2. Buat rangkaian berikut.
 
 <img src="https://user-images.githubusercontent.com/49542850/210141122-223f46bc-4ba4-4db5-b2c2-070a3fbec5b5.png" width="600px">
@@ -141,7 +166,7 @@ https://user-images.githubusercontent.com/49542850/210127142-1d9c5821-0879-481f-
 
 <img src="https://user-images.githubusercontent.com/49542850/210132159-a9c51b9c-4068-4493-ac76-ea9551f98c03.png" width="600px">
 
-12. Jika sudah selesai, pada dashboard, tekan gambar kunci untuk mendapat API key. Copy key dan masukkan ke dalam kode.
+12. Jika sudah selesai, pada dashboard, tekan gambar kunci untuk mendapat API key. Copy key dan masukkan ke dalam kode. Pastikan ssid dan password diisi dengan hotspot/AP yang terhubung dengan internet.
 
 <img src="https://user-images.githubusercontent.com/49542850/210132160-76c129d1-144c-4f88-a81b-ab6e177bea21.png" width="600px">
 
@@ -220,7 +245,7 @@ https://user-images.githubusercontent.com/49542850/210139248-8f8c8e33-86dc-4130-
 
 ### Rangkaian & Instalasi
 
-1. Siapkan ESP32 dan hubungkan ke Arduino IDE. Siapkan sensor DHT (atau lainnya).
+1. Siapkan ESP32 dan hubungkan ke Arduino IDE. Siapkan sensor DHT (atau lainnya). Pastikan library ThingSpeak sudah terinstal.
 2. Buat rangkaian berikut.
 
 <img src="https://user-images.githubusercontent.com/49542850/210139395-95c4d10c-3d9e-4898-ba3d-0165420ff2dc.png" width="600px">
@@ -243,18 +268,86 @@ https://user-images.githubusercontent.com/49542850/210139248-8f8c8e33-86dc-4130-
 
 <img src="https://user-images.githubusercontent.com/49542850/210140677-0c343ab0-2fb9-408e-adbc-b2020aa55aa7.png" width="600px">
 
-9. Masuk ke kode, ubah bagian `unsigned long myChannelNumber = 1;` dengan urutan channel Anda. Jika pertama, maka tulis 1, dst.
+9. Masuk ke kode, ubah bagian `unsigned long myChannelNumber = 1;` dengan angka channel. Jika hanya ada satu, maka isikan 1.
 10. Cari kode bagian `ThingSpeak.setField()` untuk menyesuaikan field dengan format `ThingSpeak.setField(field, value)`.
-11. Jalankan kode dan pastikan data terbaca pada chart thingspeak.
+11. Jalankan kode dan pastikan data terbaca pada chart thingspeak. Pastikan ssid dan password diisi dengan hotspot/AP yang terhubung dengan internet.
 
 ### Penjelasan
 
-.
+ThingSpeak adalah platform IoT yang dapat digunakan untuk monitoring perangkat dan tidak memiliki fungsi interaktif seperti Cayenne dan Adafruit. Sama seperti sebelumnya, fungsi thingspeak lebih sederhana. ESP menerima output sensor berupa suhu dan kelembaban yang akan diproses untuk publish. Namun sebelum dipublish, karena terdapat lebih dari satu data, variabel suhu dan kelembaban dideklarasikan fieldnya dengan perintah `ThingSpeak.setField(field, value)`. Setelah tujuan masing-masing data dideklarasikan, publish data dengan perintah `ThingSpeak.writeFields(channel, APIKey)`. API key yang digunakan adalah API Write karena kita akan menuliskan data ke dalam platform. Key bersifat private. Sedangkan key Read digunakan untuk feeding ke platform lain atau mengambil data dari ThingSpeak.
+
+Jika semua instalasi telah dilakukan dan program dijalankan, ThingSpeak akan memunculkan data pada grafik atau chartnya. Secara default, delay adalah 15 detik dan dapat diubah, namun disarankan tidak kurang dari 2 detik untuk menghindari spam. Data dari chart tersebut dapat ditampilkan dalam bentuk widget berupa angka maupun gauge. Selain itu, data dari chart juga bisa digunakan untuk mentrigger color monitoring.
+
+Fitur dari ThingSpeak tidak terlalu lengkap seperti Cayenne dan Adafruit. Sehingga, ThingSpeak hanya dapat digunakan sebagai monitoring saja.
 
 ### Keluaran
 
 <img src="https://user-images.githubusercontent.com/49542850/210140799-ac4b5da1-6065-4c54-89ba-ed26331e8e8c.png" width="600px">
 
+## Project D - Komunikasi Multipoint ESP-Sensor to Point dengan Cayenne
+
+### Rangkaian & Instalasi
+
+1. Siapkan ESP32 dan hubungkan ke Arduino IDE. Siapkan sensor DHT (atau lainnya).
+2. Buat skema berikut.
+
+<img src="https://user-images.githubusercontent.com/49542850/210164985-5d752e07-237d-4214-b371-6880f32a0cd3.png" width="600px">
+
+### Master
+
+1. Download kode dari source code sesuai project.
+2. Buat rangkaian berikut.
+
+<img src="https://user-images.githubusercontent.com/49542850/210139395-95c4d10c-3d9e-4898-ba3d-0165420ff2dc.png" width="600px">
+
+3. Ganti mac address pada kode `broadcastAddress[] = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff}` dengan mac address slave (koordinator).
+4. Ubah `espNumber` dengan angka unik 1 sampai 3 sebagai id. Antar pengirim harus memiliki id berbeda.
+5. Jalankan kode. Beberapa data yang dikirim mungkin akan fail karena terjadi jeda saat ESP penerima melakukan publish ke Cayenne.
+
+### Slave
+
+1. Download kode dari source code sesuai project. Pastikan library Cayenne sudah terinstal.
+2. Hubungkan ESP dengan Arduino IDE.
+3. Kunjungi website [Cayenne](https://cayenne.mydevices.com/) kemudian register atau login.
+4. Tekan **Add New** > **Device/Widget** dan pilih **Bring Your Own Thing** pada bagian kiri.
+
+<img src="https://user-images.githubusercontent.com/49542850/210127143-f94a8192-7e57-48d2-85f1-ac51fb300468.png" width="600px">
+
+6. Pilih perangkat yang sudah ditambahkan, kemudian rename board untuk mempermudah. Copy kredensial yang diberikan dan isikan dalam kode pada bagian yang sudah disediakan. Kemudian upload kode. Pastikan ssid dan password diisi dengan hotspot/AP yang terhubung dengan internet.
+
+<img src="https://user-images.githubusercontent.com/49542850/210127144-d112f437-7a3e-4969-af98-be98eb8568cf.png" width="600px">
+
+7. Setelah ESP terdeteksi, kemudian tekan **Add New** > **Device/Widget** dan pilih custom value.
+
+<img src="https://user-images.githubusercontent.com/49542850/210127145-976c8dda-257f-4d08-b3e8-d7bcd965f6e5.png" width="600px">
+
+8. Masukkan Nama, Data: Temperature, Unit: Celcius, Channel: 1 (pada contoh), Display. Kemudian simpan. Atau klik tombol + pada widget yang akan otomatis dibuat ketika kode diupload.
+
+<img src="https://user-images.githubusercontent.com/49542850/210165004-60f57c80-eae8-45f4-824c-75fe34515efb.png" width="600px">
+
+9. Lakukan hal yang sama untuk setiap informasi yang akan ditampilkan Cayenne. Pada contoh digunakan 4 channel.
+10. Jalankan kode. Kode dapat digunakan untuk menerima hingga 3 ESP berbeda dengan struktur data yang sama.
+
+### Penjelasan
+
+Pada percobaan ini dibagi menjadi ESP pengirim dan ESP penerima. ESP pengirim akan membaca data dari sensor DHT yaitu suhu dan kelembaban. Data tersebut kemudian dikirimkan ke ESP penerima melalui protkol ESP-NOW. ESP penerima akan menerima data dari pengirim berupa id ESP, suhu, dan kelembaban. Secara bersamaan, ESP penerima akan terhubung melalui jaringan internet hotspot/AP. Sehingga ESP-NOW akan mengirimkan data melalui channel WiFi yang sama dengan AP agar data dapat diterima oleh ESP penerima.
+
+ESP penerima akan menerima data dari satu atau lebih pengirim. Data ini disimpan pada array yang berbeda, pada kode yaitu `temperature[]` dan `humidity[]`. Data pada array tersebut kemudian dipublish menuju Cayenne pada channel-channel yang berbeda agar tidak konflik. Karena terdapat 2 pengirim, maka terdapat 4 data, sehingga diuat 4 channel pada Cayenne. Hasil suhu dan kelembaban dari kedua ESP pengirim dapat tampil pada dashboard Cayenne.
+
+Hasil serial monitor pada ESP pengirim mungkin akan mengalami beberapa fail dikarenakan delay pada ESP penerima saat melakukan publish data. ESP penerima terputus sesaat dari ESP-NOW karena terjadi komunikasi pada jaringan WiFi/internet. Sedangkan pada ESP penerima, data yang diterima akan mengalami delay yang cukup lama karena adanya proses publish.
+
+### Keluaran
+
+<img src="https://user-images.githubusercontent.com/49542850/210165345-acf2ac33-956f-49f4-a5cb-c0dae72cace2.png" width="600px">
+
+https://user-images.githubusercontent.com/49542850/210165436-383b47aa-f81e-4685-9ac9-463b21c5cdbb.mp4
+
 ## Kesimpulan
 
--   .
+-   MQTT merupakan protokol yang memungkinkan ESP untuk dapat berkomunikasi dengan sistem yang terdapat pada cloud seperti Cayenne, Adafruit IO, dan ThingSpeak.
+-   Cayenne, Adafruit IO, dan ThingSpeak merupakan beberapa platform untuk memonitoring perangkat IoT secara cloud melalui web service. Beberapa platform menyediakan fitur beragam mulai dari monitoring, controlling, hingga autonomous action.
+-   Cayenne memiliki fitur utama yaitu monitoring dan controlling. Cayenne mampu membaca data yang dikirimkan ESP melalui channel-channel yang dibuat pada Cayenne untuk membedakan data serta memberikan input kepada ESP (komunikasi 2 arah). Cayenne juga mampu melakukan autonomous action seperti jika salah satu data memenuhi syarat, maka cayenne dapat mengubah data2 atau memberikan feedback dan seterusnya.
+-   Adafruit memiliki fitur yang lebih langkap dengan klasifikasi setiap perangkat kedalam feeds. Sehingga setiap kali data dari ESP dikirim, data diteruskan pada group (feeds) yang ada. Adafruit juga memiliki fitur control seperti toggle dan dapat terintegrasi dengan platform autonomous seperti IFTTT.
+-   IFTTT merupakan salah satu platform/protokol otomasi yang terhubung dengan berbagai services. Salah satunya adalah google assistant yang memungkinkan kontrol melalui smartphone. IFTTT menghubungkan service seperti google assistant dengan adafruit agar dapat mengontrol dashboard pada adafruit.
+-   ThingSpeak merupakan salah satu platform IoT yang sangat dasar. Platform ini hanya memiliki fitur monitoring (sejauh yang saya pahami) dan tidak selengkap Adafruit IO maupun Cayenne. Untuk pengiriman data pada ThingSpeak dibedakan dengan suatu field untuk masing-masing data.
+-   Protokol ESPNOW memungkinkan ESP dapat berkomunikasi satu sama lain melalui sebuah kanal jaringan (WiFi). Akan tetapi, ESPNOW kurang cocok digunakan bersamaan dengan MQTT atau WiFi mode station. Karena saat MQTT melakukan komunikasi dengan server cloud, ESPNOW akan terhenti dan data yang dikirim akan gagal. Akan tetapi setelah proses upload selesai, ESPNOW dapat berkomunikasi kembali.
